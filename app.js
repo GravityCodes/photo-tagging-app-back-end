@@ -2,10 +2,9 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
+const routes = require('./routes');
 
-app.get("/", (req, res) => {
-    res.status(200).json({msg: "OK"});
-});
+app.use("/`answer",  routes.answer);
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);

@@ -1,3 +1,5 @@
-const home = require()
+const answer = require("./answer.js")
 
-module.exports = index
+module.exports = {
+    answer
+}
