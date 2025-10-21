@@ -1,4 +1,4 @@
-const { PrismaClient } = require("@prisma/client");
+const { PrismaClient } = require("../generated/prisma");
 const prisma = new PrismaClient();
 
 const characters = [
@@ -8,11 +8,23 @@ const characters = [
 ];
 
 async function main() {
-  await prisma.characters.createMany({
+  await prisma.character.createMany({
     data: [
-      { name: characters[0].name, x: characters[0].x, y: characters[0].y },
-      { name: characters[1].name, x: characters[1].x, y: characters[1].y },
-      { name: characters[2].name, x: characters[2].x, y: characters[2].y },
+      {
+        name: characters[0].name,
+        Xcoord: characters[0].x,
+        Ycoord: characters[0].y,
+      },
+      {
+        name: characters[1].name,
+        Xcoord: characters[1].x,
+        Ycoord: characters[1].y,
+      },
+      {
+        name: characters[2].name,
+        Xcoord: characters[2].x,
+        Ycoord: characters[2].y,
+      },
     ],
   });
 }

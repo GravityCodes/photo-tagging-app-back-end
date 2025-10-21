@@ -17,8 +17,8 @@ datasource db {
 model Character {
   id Int @id @default(autoincrement())
   name String 
-  Ycord Int
-  Xcord Int
+  Ycoord Float
+  Xcoord Float
 }
 
 model Leaderboard {
