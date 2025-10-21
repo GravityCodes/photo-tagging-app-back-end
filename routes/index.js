@@ -1,5 +1,5 @@
-const answer = require("./answer.js")
+const answer = require("./answer.js");
 
 module.exports = {
-    answer
-}
+  answer,
+};
