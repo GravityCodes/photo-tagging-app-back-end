@@ -2,6 +2,8 @@ const { Router } = require('express');
 const route = Router();
 const controller = require("../controller/answer");
 
-route.get("/", controller.checkAnswer);
+
+route.push("/", controller.checkAnswer);
+
 
 module.exports = route;
