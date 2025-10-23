@@ -3,7 +3,7 @@ const prisma = new PrismaClient();
 
 const characters = [
   { name: "ginger", x: 0.59, y: 0.5 },
-  { name: "cat", x: 0.69, y: 0.32 },
+  { name: "cat", x: 0.79, y: 0.32 },
   { name: "troublemaker", x: 0.47, y: 0.16 },
 ];
 
