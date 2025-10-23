@@ -1,5 +1,5 @@
 function checkCoords(characterCoords, PlayerCoords) {
-  const acceptableArea = 0.08;
+  const acceptableArea = 0.04;
 
   const xCoord =
     characterCoords.x - acceptableArea <= PlayerCoords.x &&

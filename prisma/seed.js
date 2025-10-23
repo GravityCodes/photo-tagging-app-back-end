@@ -2,9 +2,9 @@ const { PrismaClient } = require("../generated/prisma");
 const prisma = new PrismaClient();
 
 const characters = [
-  { name: "ginger", x: 0.59, y: 0.5 },
-  { name: "cat", x: 0.79, y: 0.32 },
-  { name: "troublemaker", x: 0.47, y: 0.16 },
+  { name: "ginger", x: 0.63, y: 0.56 },
+  { name: "cat", x: 0.78, y: 0.32 },
+  { name: "troublemaker", x: 0.45, y: 0.16 },
 ];
 
 async function main() {
