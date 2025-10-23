@@ -1,5 +1,6 @@
 const { PrismaClient } = require("../generated/prisma");
 const prisma = new PrismaClient();
+const { validationResult } = require("express-validator");
 
 const getLeaderboard = async (req, res) => {
   try {
@@ -20,6 +21,12 @@ const getLeaderboard = async (req, res) => {
 };
 
 const postLeaderboard = async (req, res) => {
+  const errors = validationResult(req);
+  
+  if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+  }
+
   try {
     const { name, time } = req.body;
 
