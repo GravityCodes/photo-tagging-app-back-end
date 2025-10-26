@@ -16,6 +16,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate deploy",
+    "build": "npm run prisma:generate && npm run prisma:migrate",
     "start": "node app.js"
   },
   "prisma": {
