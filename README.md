@@ -11,10 +11,12 @@ on express with Supertest.
 
 ## Related Repositories
 
-[Where are they Front end](https://github.com/GravityCodes/photo-tagging-app)
+[Where Are They FrontEnd](https://github.com/GravityCodes/photo-tagging-app)
 
 ## Tech
 
 [Supertest](https://www.npmjs.com/package/supertest)
+
 [Express](https://expressjs.com/)
+
 [Prisma](https://www.prisma.io/)
