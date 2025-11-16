@@ -11,7 +11,7 @@ on express with Supertest.
 
 ## Related Repositories
 
-[Where Are They FrontEnd](https://github.com/GravityCodes/photo-tagging-app)
+[Where Are They Frontend](https://github.com/GravityCodes/photo-tagging-app)
 
 ## Tech
 
